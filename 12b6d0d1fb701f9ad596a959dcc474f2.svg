@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>shield-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cybersecurity-Home" transform="translate(-153.000000, -94.000000)">
+            <g id="shield-3" transform="translate(153.000000, 94.000000)">
+                <g id="Group">
+                    <polygon id="Shape" fill="#5E5E5E" points="29.34593 27.42819 26.29659 30.47753 31.44997 35.63091 26.29659 40.78429 29.34593 43.83386 34.49931 38.68048 39.65269 43.83386 42.70226 40.78429 37.54888 35.63091 42.70226 30.47753 39.65269 27.42819 34.49931 32.58157"></polygon>
+                    <path d="M34.49931,0 C15.44634,0 0.00069,15.44703 0.00069,34.49931 C0.00069,53.55159 15.44634,69 34.49931,69 C53.55228,69 68.99931,53.55251 68.99931,34.49931 C68.99931,15.44611 53.55251,0 34.49931,0 Z M34.5,53.56378 C16.74745,53.56378 15.48291,23.52762 15.48291,23.52762 L34.49954,15.43461 L34.5,15.43461 L53.51663,23.52762 C53.51663,23.52808 52.25209,53.56378 34.5,53.56378 Z" id="Shape" fill="#8D8D8D"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

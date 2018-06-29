@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="25px" viewBox="0 0 24 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="24" height="24" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="24" height="24" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Device-Management" stroke="#ffffff" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-Device" transform="translate(-337.000000, -90.000000)">
+            <g id="Group-5" transform="translate(337.000000, 90.500000)">
+                <g id="Cell-Elements/Cell-Check" transform="translate(5.000000, 6.000000)" fill="#ffffff">
+                    <polygon id="Check" points="2.32002543 5.62012715 0.666115702 7.27403687 5.07654164 11.6844628 15 2.31230769 13.3460903 0.658397966 5.07654164 8.37664336"></polygon>
+                </g>
+                <use id="Rectangle-52" stroke="#ffffff" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

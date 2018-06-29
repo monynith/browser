@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="VPN-Out---Roqos-VPN" transform="translate(-170.000000, -110.000000)">
+            <g id="Group-2" transform="translate(170.140000, 109.509448)">
+                <g id="shield-2" transform="translate(0.122935, 0.600423)" fill="#008EA3">
+                    <g id="Group">
+                        <path d="M22.9702265,45.6384208 C1.87948513,45.6384208 0.377160895,9.95425821 0.377160895,9.95425821 L22.96968,0.339437776 L22.9702265,0.339437776 L45.5627455,9.95425821 C45.5627455,9.95425821 44.0604213,45.6384208 22.9702265,45.6384208 Z" id="Shape"></path>
+                    </g>
+                </g>
+                <path d="M17.8248782,15.5656838 C16.6900984,16.5823234 16.1229348,17.8198536 16.1229348,19.2787269 L16.1229348,33.7334772 L19.681626,33.7334772 L19.681626,20.0301168 C19.6961107,19.2053985 19.9907822,18.5350319 20.5656408,18.0190172 C21.1545313,17.4885178 21.8914366,17.2232681 22.775904,17.2232681 L30.8429348,17.2232681 L30.8429348,14.0407244 L21.9357958,14.0407244 C20.3442976,14.0262398 18.9741426,14.5345596 17.8248782,15.5656838 Z" id="Shape" stroke="#009EB4" stroke-width="0.64" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

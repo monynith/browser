@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>roqos</title>
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <!-- <script src="/pushwoosh-service-worker.js"></script> -->
+  <script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-web-notifications.js" async></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="//cdn.pushwoosh.com/webpush/v3/pushwoosh-service-worker.js"></script>   -->
+  <script type="text/javascript" src="https://cdn.rawgit.com/monynith/a6a5da1a0b286632579a207de5402a37/raw/71efd76a1ae26c50cd423acf7ed10cea6f65438c/KitKatClock.js"></script>
+<link href="vendor.css" rel="stylesheet"><link href="app.css" rel="stylesheet"></head>
+
+<body ng-app="roqos" ng-strict-di class="roqos-app platform">
+  <!--     <activity-indicator></activity-indicator>
+ -->
+  <network-accessible></network-accessible>
+  <application-error></application-error>
+  <roqos-accessible></roqos-accessible>
+  <ion-nav-view></ion-nav-view>
+
+  <!-- Rate Roqos fragement -->
+  <div class="pop-action" id="rate-review" style="display: none">
+    <div class="pop-content admin-pop-up">
+      <div id="admin-invite" style="margin-top: 50px;">
+        <span ng-if="showAppFeedback">
+          <p class="font-medium font-16" style="padding-top: 20px;"> Let us know how we can improve your experience.</p>
+          <div style="width: 100%;padding-left: 20px;padding-right: 20px;height: 250px;">
+            <textarea id="comment" style="width: 100%;height: 250px;padding: 15px"></textarea>
+          </div>
+          <div style="clear: both;"></div>
+          <div class="text-align-icenter" style="width: auto;">
+            <button class="button cancel-button font-normal font-16" on-tap="dimissReview(false);visibleMenu(true);" style="min-height: 37px; margin-top: 35px;margin-right: 15px;min-width: 120px;max-width: 120px;background-color: transparent;color: white;border: 1px solid white;">Dismiss</button>
+            <button class="button rq-destruction-button submit-button font-normal font-16" on-tap="sendFeedback();visibleMenu(true);" style="min-height: 37px;min-width: 120px;max-width: 120px;">Send</button>
+          </div>
+        </span>
+        <span ng-if="showAppReview">
+          <p class="font-medium.font-16" style="padding-top: 135px;">We are delighted to hear you are happy with your Roqos service. Would you be interested in leaving a review on Amazon?</p>
+          <div style="clear: both;"></div>
+          <div class="text-align-icenter" style="width: auto;">
+            <button class="button cancel-button font-normal font-16" on-tap="dimissReview(false);visibleMenu(true);" style="min-height: 37px;margin-top: 35px;margin-right: 15px;min-width: 120px;max-width: 120px;background-color: transparent;color: white;border: 1px solid white;">Dismiss</button>
+            <button class="button rq-destruction-button submit-button font-normal font-16" on-tap="openStoreReview();visibleMenu(true);" style="min-height: 37px;min-width: 120px;max-width: 120px;">Yes</button>
+          </div>
+        </span>
+        <span ng-if="showRate">
+          <p class="font-medium font-16 text-align-icenter" style="padding-top: 135px;">Enjoying your Roqos service?</p>
+          <p class="font-light font-14 text-align-icenter" style="padding-top: 0px;">Tap a star to rate</p>
+          <div class="text-align-icenter" style="width: auto;">
+            <i class="icon ion-android-star" style="font-size: 35px;color: #a0a0a0;" on-tap="starClick($index)"  ng-repeat="icon in starIcon" ng-class="icon.select == true ? 'star-selected' : ''"></i>
+            <div style="clear: both;"></div>
+            <button class="button cancel-button font-normal font-16" on-tap="dimissReview(false);visibleMenu(true);" style="min-height: 37px;margin-top: 35px;margin-right: 15px;min-width: 120px;max-width: 140px;background-color: transparent;color: white;border: 1px solid white;">Dismiss</button>
+            <button class="button rq-destruction-button submit-button font-normal font-16" on-tap="checkStar();visibleMenu(true);" style="min-height: 37px;min-width: 120px;max-width: 120px;">Send</button>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="pop-action" id="force-update" style="display: none">
+    <div class="pop-content admin-pop-up">
+      <div id="admin-invite">
+        <h4 class="font-medium">
+          Update Required
+        </h4>
+        <p class="font-normal font-16">
+          It looks like you are using an older version of Roqos app. Please update your app now to get all the newest features.
+        </p>
+        <div>
+          <button class="button rq-destruction-button submit-button font-normal font-16" style="margin-top: 10px;line-height: 0px;" on-tap="openUpdate()">Update
+          </button>
+          <!--button.button.cancel-button.font-normal.font-16(ng-show="uc.is_admin" on-tap="uc.closePopUp();uc.visibleMenu(true);") Cancel-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="pop-action" id="roqos-not-connected" style="display: none">
+    <button class="button button-clear button-icon icon ion-ios-close-outline button-close" on-tap="closeRCConnected();">
+    </button>
+    <div class="pop-content admin-pop-up">
+      <div id="admin-invite">
+        <h4 class="font-medium">
+          Roqos Core not connected
+        </h4>
+        <p class="font-normal font-16">
+          Roqos Core appears to be disconnected. The setting you are attempting to access is currently unavailable.
+        </p>
+        <div>
+          <button class="button rq-destruction-button submit-button font-normal font-16" style="margin-top: 10px;line-height: 0px;" on-tap="openTroubleshoot()">Help
+          </button>
+          <!--button.button.cancel-button.font-normal.font-16(ng-show="uc.is_admin" on-tap="uc.closePopUp();uc.visibleMenu(true);") Cancel-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+<script src="polyfills.bundle.js"></script><script src="vendor.bundle.js"></script><script src="ngCordova.bundle.js"></script><script src="app.bundle.js"></script></body>
+
+</html>

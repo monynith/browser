@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="19px" viewBox="0 0 26 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>close-envelope</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Add-Guest" transform="translate(-40.000000, -195.000000)" fill-rule="nonzero" fill="#008EA3">
+            <g id="close-envelope" transform="translate(40.000000, 195.000000)">
+                <g id="Group">
+                    <path d="M12.979087,12.979087 L9.76769002,10.1681876 L0.585913069,18.0390767 C0.919661019,18.3487207 1.37022075,18.5415528 1.86713437,18.5415528 L24.0910396,18.5415528 C24.586099,18.5415528 25.0348046,18.3487207 25.3666984,18.0390767 L16.1904839,10.1681876 L12.979087,12.979087 Z" id="Shape"></path>
+                    <path d="M25.3722609,0.502476081 C25.0385129,0.190977994 24.5898073,0 24.0910396,0 L1.86713437,0 C1.37207491,0 0.92336933,0.192832149 0.589621379,0.506184392 L12.979087,11.1249317 L25.3722609,0.502476081 Z" id="Shape"></path>
+                    <polygon id="Shape" points="0 1.62794834 0 17.0322704 8.96113247 9.41725467"></polygon>
+                    <polygon id="Shape" points="16.9970415 9.41725467 25.9581739 17.0322704 25.9581739 1.62238587"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7,0.5 L73.0984115,66.5984115" id="path-1"></path>
+        <filter x="-14.2%" y="-11.2%" width="128.4%" height="128.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="2.5" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WiFi-Recommendation" transform="translate(-148.000000, -165.000000)">
+            <g id="Group-2" transform="translate(148.000000, 170.000000)">
+                <g id="wifi" transform="translate(0.000000, 7.500000)" fill="#63BAC7">
+                    <g id="Group">
+                        <path d="M63.8747475,34.772 C62.7757576,34.772 61.6929293,34.356 60.8525253,33.524 C49.3131313,22.116 30.5656566,22.116 19.0262626,33.524 C17.3616162,35.172 14.6464646,35.172 12.9818182,33.524 C11.3171717,31.876 11.3171717,29.188 12.9818182,27.54 C27.8505051,12.82 52.0282828,12.82 66.8969697,27.54 C68.5616162,29.188 68.5616162,31.876 66.8969697,33.524 C66.0565657,34.356 64.9575758,34.772 63.8747475,34.772 L63.8747475,34.772 Z" id="Shape"></path>
+                        <path d="M52.3030303,46.212 C51.2040404,46.212 50.1212121,45.796 49.2808081,44.964 C46.7919192,42.5 43.4626263,41.14 39.9393939,41.14 C36.4161616,41.14 33.0868687,42.5 30.5979798,44.964 C28.9333333,46.612 26.2181818,46.612 24.5535354,44.964 C22.8888889,43.316 22.8888889,40.628 24.5535354,38.98 C28.6585859,34.916 34.1212121,32.676 39.9393939,32.676 C45.7575758,32.676 51.220202,34.916 55.3252525,38.996 C56.989899,40.644 56.989899,43.332 55.3252525,44.98 C54.5010101,45.796 53.4020202,46.212 52.3030303,46.212 L52.3030303,46.212 Z" id="Shape"></path>
+                        <ellipse id="Oval" cx="39.9393939" cy="54.228" rx="5.70505051" ry="5.648"></ellipse>
+                        <path d="M75.6242424,23.14 C74.5252525,23.14 73.4424242,22.724 72.6020202,21.892 C54.5818182,4.068 25.2969697,4.068 7.29292929,21.892 C5.62828283,23.54 2.91313131,23.54 1.24848485,21.892 C-0.416161616,20.244 -0.416161616,17.556 1.24848485,15.908 C11.5919192,5.668 25.3292929,0.036 39.9555556,0.036 C54.5818182,0.036 68.3191919,5.668 78.6626263,15.908 C80.3272727,17.556 80.3272727,20.244 78.6626263,21.892 C77.8060606,22.724 76.7070707,23.14 75.6242424,23.14 L75.6242424,23.14 Z" id="Shape"></path>
+                    </g>
+                </g>
+                <g id="Line" stroke-linecap="square">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke="#1799AB" stroke-width="5" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
